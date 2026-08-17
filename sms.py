@@ -19,7 +19,7 @@ payload = {
 }
 
 # Realiza la solicitud POST a la API de TextBelt
-response = request.post(url, data=payload)
+response = requests.post(url, data=payload)
 
 # Verifica el estado del envío
 if response.json().get('success'):
